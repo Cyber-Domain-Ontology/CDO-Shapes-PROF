@@ -10,12 +10,38 @@
 
 <http://example.org/ontology/cdo-prof>
 	a owl:Ontology ;
-	rdfs:comment "This ontology supplements PROF to describe links between the various ontologies, shapes graphs, and other profiles near to PROF."@en ;
+	rdfs:comment "This ontology supplements PROF to describe links between the various ontologies, shapes graphs, and other profiles near to PROF.  Some links provided here only have apparent connections on incorporating the shapes graph sh-prof and its imports closure."@en ;
 	dct:conformsTo <http://example.org/shapes/sh-prof> ;
 	owl:imports prof:1.0 ;
 	.
 
 <http://example.org/shapes/sh-prof>
 	a prof:Profile ;
+	dct:conformsTo <http://www.w3.org/ns/shacl-shacl#> ;
+	.
+
+<http://www.w3.org/2002/07/owl#>
+	a dct:Standard ;
+	.
+
+<http://www.w3.org/ns/shacl#>
+	a dct:Standard ;
+	.
+
+<http://www.w3.org/ns/shacl-shacl#>
+	a prof:Profile ;
+	prof:isProfileOf <http://www.w3.org/ns/shacl#> ;
+	.
+
+<https://ontology.unifiedcyberontology.org/owl>
+	a prof:Profile ;
+	rdfs:comment "This shapes graph is a 3rd-party implementation of OWL 2 DL syntax review, partial at the current version (1.4.0).  The link between sh-prof and the versionIRI of this validator-role profile of OWL is not apparent unless the shapes graph is imported into the profiles-analysis graph."@en ;
+	dct:conformsTo <http://www.w3.org/ns/shacl-shacl#> ;
+	prof:isProfileOf <https://www.w3.org/ns/owl-profile/DL> ;
+	.
+
+<https://www.w3.org/ns/owl-profile/DL>
+	a prof:Profile ;
+	prof:isProfileOf <http://www.w3.org/2002/07/owl#> ;
 	.
 
