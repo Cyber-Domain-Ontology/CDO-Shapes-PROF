@@ -1,4 +1,4 @@
-# imports: http://www.w3.org/ns/dx/prof/1.0
+# imports: http://example.org/ontology/cdo-prof
 
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix drafting: <http://example.org/ontology/drafting/> .
@@ -16,7 +16,7 @@
 	a owl:Ontology ;
 	rdfs:comment "This knowledge base instantiates each of the shape-reviewed classes and properties, so SHACL shapes can be exercised for the reviewed ontology."@en ;
 	dcterms:conformsTo <http://example.org/shapes/sh-prof> ;
-	owl:imports prof:1.0 ;
+	owl:imports <http://example.org/ontology/cdo-prof> ;
 	.
 
 kb:Concept-e0a82952-ab87-48db-a9ea-451bf13b4e3e
