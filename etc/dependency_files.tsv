@@ -1,2 +1,3 @@
+http://example.org/ontology/cdo-prof	${top_srcdir}/ontology/cdo-prof.ttl
 http://example.org/shapes/sh-prof	${top_srcdir}/shapes/sh-prof.ttl
 http://www.w3.org/ns/dx/prof/1.0	${top_srcdir}/dependencies/formatted-prof.ttl
