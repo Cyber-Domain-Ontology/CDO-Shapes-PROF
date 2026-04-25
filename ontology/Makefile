@@ -26,12 +26,23 @@ uco_srcdir := $(top_srcdir)/dependencies/UCO
 ttl_basenames := $(wildcard cdo-*.ttl)
 
 all: \
-  catalog-v001.xml
+  catalog-v001.xml \
+  all-figures
+
+.PHONY: \
+  all-figures \
+  check-figures \
+  clean-figures
 
 # .empty.ttl is retained to guarantee rdfpipe takes at least one file as
 # an input when building generated-dependencies.ttl and -local.ttl.
 .empty.ttl:
 	test -r $@
+
+all-figures: \
+  generated-ontology.ttl
+	$(MAKE) \
+	  --directory figures
 
 catalog-v001.xml: \
   $(top_srcdir)/.venv.done.log \
@@ -50,14 +61,27 @@ catalog-v001.xml: \
 	mv _$@ $@
 
 check: \
-  all
+  all \
+  check-figures
 
-clean:
+check-figures: \
+  all-figures
+	$(MAKE) \
+	  --directory figures \
+	  check
+
+clean: \
+  clean-figures
 	@rm -f \
 	  .*.done.log \
 	  _* \
 	  catalog-v001.xml \
 	  generated-*.ttl
+
+clean-figures:
+	@$(MAKE) \
+	  --directory figures \
+	  clean
 
 generated-dependencies.ttl: \
   $(generated_dependencies_ttls) \

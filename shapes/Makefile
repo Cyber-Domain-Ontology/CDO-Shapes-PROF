@@ -31,12 +31,23 @@ generated_dependencies_ttls := \
 ttl_basenames := $(wildcard sh-*.ttl)
 
 all: \
-  catalog-v001.xml
+  catalog-v001.xml \
+  all-figures
+
+.PHONY: \
+  all-figures \
+  check-figures \
+  clean-figures
 
 # .empty.ttl is retained to guarantee rdfpipe takes at least one file as
 # an input when building generated-local.ttl.
 .empty.ttl:
 	test -r $@
+
+all-figures: \
+  generated-shapes.ttl
+	$(MAKE) \
+	  --directory figures
 
 catalog-v001.xml: \
   $(top_srcdir)/.venv.done.log \
@@ -57,13 +68,26 @@ catalog-v001.xml: \
 	mv _$@ $@
 
 check: \
-  catalog-v001.xml
+  catalog-v001.xml \
+  check-figures
 
-clean:
+check-figures: \
+  all-figures
+	$(MAKE) \
+	  --directory figures \
+	  check
+
+clean: \
+  clean-figures
 	@rm -f \
 	  _* \
 	  catalog-v001.xml \
 	  generated-*
+
+clean-figures:
+	@$(MAKE) \
+	  --directory figures \
+	  clean
 
 generated-dependencies.ttl: \
   $(generated_dependencies_ttls) \

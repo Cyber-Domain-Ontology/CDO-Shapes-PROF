@@ -1,3 +1,4 @@
 mypy
+pydot
 pyshacl >= 0.22.1
 pytest

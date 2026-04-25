@@ -21,7 +21,13 @@ top_srcdir := $(shell cd .. ; pwd)
 uco_srcdir := $(top_srcdir)/dependencies/UCO
 
 all: \
-  generated-exemplars-expanded.ttl
+  generated-exemplars-expanded.ttl \
+  all-figures
+
+.PHONY: \
+  all-figures \
+  check-figures \
+  clean-figures
 
 .pyshacl.done.log: \
   $(top_srcdir)/shapes/generated-shapes.ttl \
@@ -47,15 +53,32 @@ all: \
 	    --log-level=DEBUG
 	touch $@
 
+all-figures:
+	$(MAKE) \
+	  --directory figures
+
 check: \
   generated-monolithic.ttl \
   .pytest.done.log \
-  .pyshacl.done.log
+  .pyshacl.done.log \
+  check-figures
 
-clean:
+check-figures: \
+  all-figures
+	$(MAKE) \
+	  --directory figures \
+	  check
+
+clean: \
+  clean-figures
 	@rm -f \
 	  .*.done.log \
 	  generated-*
+
+clean-figures:
+	@$(MAKE) \
+	  --directory figures \
+	  clean
 
 generated-exemplars-entailment.ttl: \
   $(top_srcdir)/.venv.done.log \
