@@ -2,3 +2,7 @@
 	path = dependencies/UCO
 	url = https://github.com/ucoProject/UCO.git
 	branch = master
+[submodule "dependencies/dx-prof"]
+	path = dependencies/dx-prof
+	url = https://github.com/ajnelson-nist/dx-prof.git
+	branch = fix_email_address_turtle_iri_syntax

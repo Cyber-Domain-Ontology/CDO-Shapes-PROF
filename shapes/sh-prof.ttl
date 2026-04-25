@@ -1,0 +1,156 @@
+# imports: https://ontology.unifiedcyberontology.org/owl/1.4.0
+
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sh-prof: <http://example.org/shapes/sh-prof/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/shapes/sh-prof>
+	a owl:Ontology ;
+	rdfs:comment "This shapes file should be filled in for classes and properties of interest when the upstream ontology does not provide SHACL shapes."@en ;
+	owl:imports <https://ontology.unifiedcyberontology.org/owl/1.4.0> ;
+	.
+
+sh-prof:Profile-shape
+	a sh:NodeShape ;
+	sh:targetClass prof:Profile ;
+	.
+
+sh-prof:ResourceDescriptor-shape
+	a sh:NodeShape ;
+	sh:targetClass prof:ResourceDescriptor ;
+	.
+
+sh-prof:ResourceRole-shape
+	a sh:NodeShape ;
+	sh:targetClass prof:ResourceRole ;
+	.
+
+sh-prof:conformsTo-subjects-conformsTo-shape
+	a sh:PropertyShape ;
+	sh:class dct:Standard ;
+	sh:nodeKind sh:BlankNodeOrIRI ;
+	sh:path dct:conformsTo ;
+	.
+
+sh-prof:conformsTo-subjects-shape
+	a sh:NodeShape ;
+	sh:property sh-prof:conformsTo-subjects-conformsTo-shape ;
+	sh:targetSubjectsOf dct:conformsTo ;
+	.
+
+sh-prof:format-subjects-format-shape
+	a sh:PropertyShape ;
+	sh:class dct:MediaTypeOrExtent ;
+	sh:nodeKind sh:BlankNodeOrIRI ;
+	sh:path dct:format ;
+	.
+
+sh-prof:format-subjects-shape
+	a sh:NodeShape ;
+	sh:property sh-prof:format-subjects-format-shape ;
+	sh:targetSubjectsOf dct:format ;
+	.
+
+sh-prof:hasArtifact-subjects-hasArtifact-shape
+	a sh:PropertyShape ;
+	sh:nodeKind sh:BlankNodeOrIRI ;
+	sh:path prof:hasArtifact ;
+	.
+
+sh-prof:hasArtifact-subjects-shape
+	a sh:NodeShape ;
+	sh:class prof:ResourceDescriptor ;
+	sh:property sh-prof:hasArtifact-subjects-hasArtifact-shape ;
+	sh:targetSubjectsOf prof:hasArtifact ;
+	.
+
+sh-prof:hasResource-subjects-hasResource-shape
+	a sh:PropertyShape ;
+	sh:class prof:ResourceDescriptor ;
+	sh:nodeKind sh:BlankNodeOrIRI ;
+	sh:path prof:hasResource ;
+	.
+
+sh-prof:hasResource-subjects-shape
+	a sh:NodeShape ;
+	sh:property sh-prof:hasResource-subjects-hasResource-shape ;
+	sh:targetSubjectsOf prof:hasResource ;
+	.
+
+sh-prof:hasRole-subjects-hasRole-shape
+	a sh:PropertyShape ;
+	sh:class skos:Concept ;
+	sh:nodeKind sh:BlankNodeOrIRI ;
+	sh:path prof:hasRole ;
+	.
+
+sh-prof:hasRole-subjects-shape
+	a sh:NodeShape ;
+	sh:class prof:ResourceDescriptor ;
+	sh:property sh-prof:hasRole-subjects-hasRole-shape ;
+	sh:targetSubjectsOf prof:hasRole ;
+	.
+
+sh-prof:hasToken-subjects-hasToken-shape
+	a sh:PropertyShape ;
+	sh:datatype xsd:token ;
+	sh:nodeKind sh:Literal ;
+	sh:path prof:hasToken ;
+	.
+
+sh-prof:hasToken-subjects-shape
+	a sh:NodeShape ;
+	sh:class prof:Profile ;
+	sh:property sh-prof:hasToken-subjects-hasToken-shape ;
+	sh:targetSubjectsOf prof:hasToken ;
+	.
+
+sh-prof:isInheritedFrom-subjects-isInheritedFrom-shape
+	a sh:PropertyShape ;
+	sh:class prof:Profile ;
+	sh:nodeKind sh:BlankNodeOrIRI ;
+	sh:path prof:isInheritedFrom ;
+	.
+
+sh-prof:isInheritedFrom-subjects-shape
+	a sh:NodeShape ;
+	sh:class prof:ResourceDescriptor ;
+	sh:property sh-prof:isInheritedFrom-subjects-isInheritedFrom-shape ;
+	sh:targetSubjectsOf prof:isInheritedFrom ;
+	.
+
+sh-prof:isProfileOf-subjects-isProfileOf-shape
+	a sh:PropertyShape ;
+	sh:class dct:Standard ;
+	sh:nodeKind sh:BlankNodeOrIRI ;
+	sh:path prof:isProfileOf ;
+	.
+
+sh-prof:isProfileOf-subjects-shape
+	a sh:NodeShape ;
+	sh:class prof:Profile ;
+	sh:property sh-prof:isProfileOf-subjects-isProfileOf-shape ;
+	sh:targetSubjectsOf prof:isProfileOf ;
+	.
+
+sh-prof:isTransitiveProfileOf-subjects-isTransitiveProfileOf-shape
+	a sh:PropertyShape ;
+	sh:class dct:Standard ;
+	sh:nodeKind sh:BlankNodeOrIRI ;
+	sh:path prof:isTransitiveProfileOf ;
+	.
+
+sh-prof:isTransitiveProfileOf-subjects-shape
+	a sh:NodeShape ;
+	sh:class prof:Profile ;
+	sh:property sh-prof:isTransitiveProfileOf-subjects-isTransitiveProfileOf-shape ;
+	sh:targetSubjectsOf prof:isTransitiveProfileOf ;
+	.
+

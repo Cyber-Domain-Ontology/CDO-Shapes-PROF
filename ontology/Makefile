@@ -19,7 +19,7 @@ SHELL := /bin/bash
 top_srcdir := $(shell cd .. ; pwd)
 
 generated_dependencies_ttls := \
-  $(top_srcdir)/dependencies/formatted-example.ttl
+  $(top_srcdir)/dependencies/formatted-prof.ttl
 
 uco_srcdir := $(top_srcdir)/dependencies/UCO
 

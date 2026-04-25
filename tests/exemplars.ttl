@@ -1,20 +1,125 @@
-# imports: http://example.org/shapes/sh-example
+# imports: http://www.w3.org/ns/dx/prof/1.0
 
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix drafting: <http://example.org/ontology/drafting/> .
-@prefix ex: <http://example.org/ontology/example/> .
 @prefix kb: <http://example.org/kb/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sh-prof: <http://example.org/shapes/sh-prof/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.org/kb>
 	a owl:Ontology ;
 	rdfs:comment "This knowledge base instantiates each of the shape-reviewed classes and properties, so SHACL shapes can be exercised for the reviewed ontology."@en ;
-	owl:imports <http://example.org/shapes/sh-example> ;
+	owl:imports prof:1.0 ;
 	.
 
-kb:Object-76f5befa-f5e1-4b2c-8d7b-ea7cf18ecca6
-	a ex:Object ;
+kb:Concept-e0a82952-ab87-48db-a9ea-451bf13b4e3e
+	a skos:Concept ;
+	rdfs:seeAlso sh-prof:hasRole-subjects-hasRole-shape ;
+	.
+
+kb:MediaTypeOrExtent-e0ebc27d-f1d0-469b-9ea7-22fee31a4bd1
+	a dcterms:MediaTypeOrExtent ;
+	rdfs:seeAlso sh-prof:format-subjects-format-shape ;
+	.
+
+kb:Profile-58ffd628-b195-4b73-adcf-2ab95c4d100a
+	a prof:Profile ;
+	rdfs:seeAlso sh-prof:isInheritedFrom-subjects-isInheritedFrom-shape ;
+	.
+
+kb:Profile-86ff294b-f010-44ad-83e1-15254946d2e1
+	a prof:Profile ;
+	rdfs:seeAlso sh-prof:Profile-shape ;
+	.
+
+kb:Profile-a64f7106-8009-4b4c-b747-735b0fab8a8f
+	a prof:Profile ;
+	rdfs:seeAlso sh-prof:isProfileOf-subjects-shape ;
+	prof:isProfileOf kb:Standard-01f5ae7d-e754-48af-a76f-6b0c6147cbe2 ;
+	.
+
+kb:Profile-b36a4822-8c3f-4c00-af5e-56a5436dcb15
+	a prof:Profile ;
+	rdfs:seeAlso sh-prof:isTransitiveProfileOf-subjects-shape ;
+	prof:isTransitiveProfileOf kb:Standard-485eaf89-241c-4492-89e6-8889e2c5dfca ;
+	.
+
+kb:Profile-c549b51c-6f8b-41bb-b34e-1e2e3e993ac7
+	a prof:Profile ;
+	rdfs:seeAlso sh-prof:hasToken-subjects-shape ;
+	prof:hasToken ""^^xsd:token ;
+	.
+
+kb:ResourceDescriptor-54563564-4f56-4992-bab8-5be9ce779a4c
+	a prof:ResourceDescriptor ;
+	rdfs:seeAlso sh-prof:hasRole-subjects-shape ;
+	prof:hasRole kb:Concept-e0a82952-ab87-48db-a9ea-451bf13b4e3e ;
+	.
+
+kb:ResourceDescriptor-5fb44a17-a0a4-44e5-b1c0-43b86e419eaf
+	a prof:ResourceDescriptor ;
+	rdfs:seeAlso sh-prof:hasResource-subjects-hasResource-shape ;
+	.
+
+kb:ResourceDescriptor-78ce5710-0bcd-444a-81dc-d77f4bd5d7ed
+	a prof:ResourceDescriptor ;
+	rdfs:seeAlso sh-prof:hasArtifact-subjects-shape ;
+	prof:hasArtifact kb:Thing-fa69c1d8-4321-4aec-b747-f8a2b4afc47b ;
+	.
+
+kb:ResourceDescriptor-85e234d7-0f2d-4407-91b2-4442b28c0159
+	a prof:ResourceDescriptor ;
+	rdfs:seeAlso sh-prof:ResourceDescriptor-shape ;
+	.
+
+kb:ResourceDescriptor-e3c367e0-84b0-4305-bd33-57d0a1572d25
+	a prof:ResourceDescriptor ;
+	rdfs:seeAlso sh-prof:isInheritedFrom-subjects-shape ;
+	prof:isInheritedFrom kb:Profile-58ffd628-b195-4b73-adcf-2ab95c4d100a ;
+	.
+
+kb:ResourceRole-ab0e27a9-86df-491c-b184-c65c6311a734
+	a prof:ResourceRole ;
+	rdfs:seeAlso sh-prof:ResourceRole-shape ;
+	.
+
+kb:Standard-01f5ae7d-e754-48af-a76f-6b0c6147cbe2
+	a dcterms:Standard ;
+	rdfs:seeAlso sh-prof:isProfileOf-subjects-isProfileOf-shape ;
+	.
+
+kb:Standard-19bbae12-25b2-451d-85aa-b3ebefb49bd8
+	a dcterms:Standard ;
+	rdfs:seeAlso sh-prof:conformsTo-subjects-conformsTo-shape ;
+	.
+
+kb:Standard-485eaf89-241c-4492-89e6-8889e2c5dfca
+	a dcterms:Standard ;
+	rdfs:seeAlso sh-prof:isTransitiveProfileOf-subjects-isTransitiveProfileOf-shape ;
+	.
+
+kb:Thing-104ad7a3-c0f1-49ce-ac47-002742c2784f
+	rdfs:seeAlso sh-prof:hasResource-subjects-shape ;
+	prof:hasResource kb:ResourceDescriptor-5fb44a17-a0a4-44e5-b1c0-43b86e419eaf ;
+	.
+
+kb:Thing-5623dfe0-7f8b-4b27-8a15-eb1ce328aee5
+	dcterms:format kb:MediaTypeOrExtent-e0ebc27d-f1d0-469b-9ea7-22fee31a4bd1 ;
+	rdfs:seeAlso sh-prof:format-subjects-shape ;
+	.
+
+kb:Thing-a0c343bc-d88a-49b2-820f-7a47b72f7cee
+	dcterms:conformsTo kb:Standard-19bbae12-25b2-451d-85aa-b3ebefb49bd8 ;
+	rdfs:seeAlso sh-prof:conformsTo-subjects-shape ;
+	.
+
+kb:Thing-fa69c1d8-4321-4aec-b747-f8a2b4afc47b
+	rdfs:seeAlso sh-prof:hasArtifact-subjects-hasArtifact-shape ;
 	.
 
