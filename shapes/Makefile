@@ -80,6 +80,7 @@ check-figures: \
 clean: \
   clean-figures
 	@rm -f \
+  	  .*.done.log \
 	  _* \
 	  catalog-v001.xml \
 	  generated-*
@@ -136,4 +137,11 @@ generated-shapes.ttl: \
 	    --ont-graph $(top_srcdir)/ontology/generated-ontology.ttl \
 	    --shacl _$@ \
 	    .empty.ttl
+	# Workflow special-case: Have shapes graph review TBox,
+	# due to TBox describing profiles involving itself.
+	source $(top_srcdir)/venv/bin/activate \
+	  && pyshacl \
+	    --ont-graph $(top_srcdir)/ontology/generated-ontology.ttl \
+	    --shacl _$@ \
+	    $(top_srcdir)/ontology/generated-ontology.ttl
 	mv _$@ $@

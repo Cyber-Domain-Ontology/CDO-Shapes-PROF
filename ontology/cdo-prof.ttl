@@ -15,3 +15,7 @@
 	owl:imports prof:1.0 ;
 	.
 
+<http://example.org/shapes/sh-prof>
+	a prof:Profile ;
+	.
+
