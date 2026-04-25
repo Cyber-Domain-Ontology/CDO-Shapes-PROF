@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
     <uri id="User Entered Import Resolution" uri="../dependencies/formatted-prof.ttl" name="http://www.w3.org/ns/dx/prof"/>
+    <uri id="User Entered Import Resolution" uri="../dependencies/formatted-prof.ttl" name="http://www.w3.org/ns/dx/prof/1.0"/>
+    <uri id="User Entered Import Resolution" uri="cdo-prof.ttl" name="http://example.org/ontology/cdo-prof"/>
 </catalog>
