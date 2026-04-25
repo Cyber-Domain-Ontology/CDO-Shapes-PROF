@@ -145,20 +145,33 @@
 <polygon fill="none" stroke="#9b9b9b" points="1388.62,-36 1061.38,-36 1061.38,0 1388.62,0 1388.62,-36"/>
 <text xml:space="preserve" text-anchor="middle" x="1225" y="-12.95" font-family="Times,serif" font-size="14.00">IRI &#45; https://ontology.unifiedcyberontology.org/owl/1.4.0</text>
 </g>
-<!-- _84d7486e89db34fe8e643ac8659722468ca3b98631319d89e7455329c7cb4e6a -->
+<!-- _7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618 -->
 <g id="node15" class="node">
+<title>_7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618</title>
+<polygon fill="none" stroke="black" points="1189.5,-124.5 960.5,-124.5 960.5,-88.5 1189.5,-88.5 1189.5,-124.5"/>
+<text xml:space="preserve" text-anchor="middle" x="1075" y="-101.45" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/shapes/sh&#45;prof</text>
+</g>
+<!-- _7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353 -->
+<g id="edge13" class="edge">
+<title>_7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353</title>
+<path fill="none" stroke="black" d="M1104.99,-88.2C1127.91,-74.99 1159.73,-56.64 1184.84,-42.16"/>
+<polygon fill="none" stroke="black" points="1186.58,-45.2 1193.49,-37.17 1183.08,-39.13 1186.58,-45.2"/>
+<text xml:space="preserve" text-anchor="middle" x="1196.44" y="-57.2" font-family="Times,serif" font-size="14.00">owl:imports</text>
+</g>
+<!-- _84d7486e89db34fe8e643ac8659722468ca3b98631319d89e7455329c7cb4e6a -->
+<g id="node16" class="node">
 <title>_84d7486e89db34fe8e643ac8659722468ca3b98631319d89e7455329c7cb4e6a</title>
 <polygon fill="#9b9b9b" stroke="black" points="1965.12,-213 1532.88,-213 1532.88,-177 1965.12,-177 1965.12,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="1749" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/kb/Profile&#45;58ffd628&#45;b195&#45;4b73&#45;adcf&#45;2ab95c4d100a</text>
 </g>
 <!-- _32cef3a71b15af6f13f50a02716d24c6a454269da01946e227ca28e9412343f9 -->
-<g id="node16" class="node">
+<g id="node17" class="node">
 <title>_32cef3a71b15af6f13f50a02716d24c6a454269da01946e227ca28e9412343f9</title>
 <polygon fill="#9b9b9b" stroke="black" points="2416.88,-213 1983.12,-213 1983.12,-177 2416.88,-177 2416.88,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="2200" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/kb/Profile&#45;86ff294b&#45;f010&#45;44ad&#45;83e1&#45;15254946d2e1</text>
 </g>
 <!-- _3308c6b408c0a01c801472bf558b0c7fa59e91f3e9fdecc869fe3ec94de62ada -->
-<g id="node17" class="node">
+<g id="node18" class="node">
 <title>_3308c6b408c0a01c801472bf558b0c7fa59e91f3e9fdecc869fe3ec94de62ada</title>
 <polygon fill="#9b9b9b" stroke="black" points="2867.5,-213 2434.5,-213 2434.5,-177 2867.5,-177 2867.5,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="2651" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/kb/Profile&#45;a64f7106&#45;8009&#45;4b4c&#45;b747&#45;735b0fab8a8f</text>
@@ -177,19 +190,19 @@
 <text xml:space="preserve" text-anchor="middle" x="2694.12" y="-145.7" font-family="Times,serif" font-size="14.00">prof:isProfileOf</text>
 </g>
 <!-- _5351ca9169145b8648691e9bbe3042382c3ef8c32f3e6c689fb753e181eb005c -->
-<g id="node18" class="node">
+<g id="node19" class="node">
 <title>_5351ca9169145b8648691e9bbe3042382c3ef8c32f3e6c689fb753e181eb005c</title>
 <polygon fill="#9b9b9b" stroke="black" points="3318.5,-213 2885.5,-213 2885.5,-177 3318.5,-177 3318.5,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="3102" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/kb/Profile&#45;b36a4822&#45;8c3f&#45;4c00&#45;af5e&#45;56a5436dcb15</text>
 </g>
 <!-- _665da6aa24b4172ac714a1b908428b241ba70e9f7af4f75d4cc0efea2de66aaa -->
-<g id="node19" class="node">
+<g id="node20" class="node">
 <title>_665da6aa24b4172ac714a1b908428b241ba70e9f7af4f75d4cc0efea2de66aaa</title>
 <polygon fill="#9b9b9b" stroke="black" points="3771.25,-213 3336.75,-213 3336.75,-177 3771.25,-177 3771.25,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="3554" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/kb/Profile&#45;c549b51c&#45;6f8b&#45;41bb&#45;b34e&#45;1e2e3e993ac7</text>
 </g>
 <!-- _c7f3d2538524bd8575cde368ba1de43430b3acf816e7c430a3ab938efef654ad -->
-<g id="node20" class="node">
+<g id="node21" class="node">
 <title>_c7f3d2538524bd8575cde368ba1de43430b3acf816e7c430a3ab938efef654ad</title>
 <polygon fill="none" stroke="black" points="1089.25,-213 840.75,-213 840.75,-177 1089.25,-177 1089.25,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="965" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/ontology/cdo&#45;prof</text>
@@ -201,12 +214,6 @@
 <polygon fill="none" stroke="black" points="1196.41,-128.76 1205.8,-123.86 1195.4,-121.83 1196.41,-128.76"/>
 <text xml:space="preserve" text-anchor="middle" x="1126" y="-145.7" font-family="Times,serif" font-size="14.00">owl:imports</text>
 </g>
-<!-- _7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618 -->
-<g id="node22" class="node">
-<title>_7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618</title>
-<polygon fill="none" stroke="black" points="1189.5,-124.5 960.5,-124.5 960.5,-88.5 1189.5,-88.5 1189.5,-124.5"/>
-<text xml:space="preserve" text-anchor="middle" x="1075" y="-101.45" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/shapes/sh&#45;prof</text>
-</g>
 <!-- _c7f3d2538524bd8575cde368ba1de43430b3acf816e7c430a3ab938efef654ad&#45;&gt;_7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618 -->
 <g id="edge7" class="edge">
 <title>_c7f3d2538524bd8575cde368ba1de43430b3acf816e7c430a3ab938efef654ad&#45;&gt;_7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618</title>
@@ -215,7 +222,7 @@
 <text xml:space="preserve" text-anchor="middle" x="1017" y="-145.7" font-family="Times,serif" font-size="14.00">dcterms:conformsTo</text>
 </g>
 <!-- _104e7bcaa55bc08d018828107e55543f900143a3e9d6427d84e0e78a7797f13d -->
-<g id="node21" class="node">
+<g id="node22" class="node">
 <title>_104e7bcaa55bc08d018828107e55543f900143a3e9d6427d84e0e78a7797f13d</title>
 <polygon fill="none" stroke="black" points="1515,-213 1307,-213 1307,-177 1515,-177 1515,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="1411" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; http://www.w3.org/ns/dx/prof</text>
@@ -226,13 +233,6 @@
 <path fill="none" stroke="gray" d="M1406.8,-176.57C1403.46,-165.73 1397.85,-152.06 1389,-142.5 1385.04,-138.21 1380.43,-134.36 1375.51,-130.92"/>
 <polygon fill="gray" stroke="gray" points="1377.4,-127.97 1367.07,-125.61 1373.67,-133.9 1377.4,-127.97"/>
 <text xml:space="preserve" text-anchor="middle" x="1440.78" y="-145.7" font-family="Times,serif" font-size="14.00">owl:versionIRI</text>
-</g>
-<!-- _7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353 -->
-<g id="edge13" class="edge">
-<title>_7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353</title>
-<path fill="none" stroke="black" d="M1104.99,-88.2C1127.91,-74.99 1159.73,-56.64 1184.84,-42.16"/>
-<polygon fill="none" stroke="black" points="1186.58,-45.2 1193.49,-37.17 1183.08,-39.13 1186.58,-45.2"/>
-<text xml:space="preserve" text-anchor="middle" x="1196.44" y="-57.2" font-family="Times,serif" font-size="14.00">owl:imports</text>
 </g>
 <!-- _f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351 -->
 <g id="node23" class="node">
