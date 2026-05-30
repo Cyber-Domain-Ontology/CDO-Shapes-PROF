@@ -116,7 +116,7 @@ all-shapes: \
 	  --directory shapes
 
 all-tests: \
-  all-ontology
+  all-shapes
 	$(MAKE) \
 	  --directory tests
 
