@@ -17,6 +17,7 @@
 	rdfs:comment "This knowledge base instantiates each of the shape-reviewed classes and properties, so SHACL shapes can be exercised for the reviewed ontology."@en ;
 	dcterms:conformsTo <http://example.org/shapes/sh-prof> ;
 	owl:imports <http://example.org/ontology/cdo-prof> ;
+	sh:shapesGraph <http://example.org/shapes/sh-prof> ;
 	.
 
 kb:Concept-e0a82952-ab87-48db-a9ea-451bf13b4e3e
