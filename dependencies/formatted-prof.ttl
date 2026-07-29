@@ -33,7 +33,7 @@ This model starts with [http://dublincore.org/2012/06/14/dcterms#Standard](dct:S
 					sdo:url <https://www.opengeospatial.org/> ;
 				]
 				;
-			sdo:email <mailto:rob@metalinkage.com.au> ;
+			sdo:email <http://www.w3.org/ns/dx/rob@metalinkage.com.au> ;
 			sdo:identifier <http://orcid.org/0000-0002-7878-2693> ;
 			sdo:name "Rob Atkinson" ;
 		] ,
@@ -42,7 +42,7 @@ This model starts with [http://dublincore.org/2012/06/14/dcterms#Standard](dct:S
 				sdo:name "SURROUND Australia Pty Ltd" ;
 				sdo:url <https://surroundaustralia.com> ;
 			] ;
-			sdo:email <mailto:nicholas.car@surroundaustralia.com> ;
+			sdo:email <http://www.w3.org/ns/dx/nicholas.car@surroundaustralia.com> ;
 			sdo:identifier <http://orcid.org/0000-0002-8742-7730> ;
 			sdo:name "Nicholas J. Car" ;
 		]
