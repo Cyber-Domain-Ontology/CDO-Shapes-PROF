@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
     <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/owl/owl.ttl" name="https://ontology.unifiedcyberontology.org/owl"/>
-    <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/owl/owl.ttl" name="https://ontology.unifiedcyberontology.org/owl/1.4.0"/>
+    <uri id="User Entered Import Resolution" uri="../dependencies/UCO/ontology/owl/owl.ttl" name="https://ontology.unifiedcyberontology.org/owl/1.5.0"/>
     <uri id="User Entered Import Resolution" uri="sh-prof.ttl" name="http://example.org/shapes/sh-prof"/>
 </catalog>

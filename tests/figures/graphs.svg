@@ -158,15 +158,15 @@
 <polygon fill="none" stroke="black" points="1859.5,-213 1630.5,-213 1630.5,-177 1859.5,-177 1859.5,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="1745" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; http://example.org/shapes/sh&#45;prof</text>
 </g>
-<!-- _ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353 -->
+<!-- _35e7ef38147a012bdb8fd2eda36f6e6d21565d8c13fee1284043b753dabaf998 -->
 <g id="node17" class="node">
-<title>_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353</title>
+<title>_35e7ef38147a012bdb8fd2eda36f6e6d21565d8c13fee1284043b753dabaf998</title>
 <polygon fill="none" stroke="#9b9b9b" points="2120.62,-124.5 1793.38,-124.5 1793.38,-88.5 2120.62,-88.5 2120.62,-124.5"/>
-<text xml:space="preserve" text-anchor="middle" x="1957" y="-101.45" font-family="Times,serif" font-size="14.00">IRI &#45; https://ontology.unifiedcyberontology.org/owl/1.4.0</text>
+<text xml:space="preserve" text-anchor="middle" x="1957" y="-101.45" font-family="Times,serif" font-size="14.00">IRI &#45; https://ontology.unifiedcyberontology.org/owl/1.5.0</text>
 </g>
-<!-- _7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353 -->
+<!-- _7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618&#45;&gt;_35e7ef38147a012bdb8fd2eda36f6e6d21565d8c13fee1284043b753dabaf998 -->
 <g id="edge15" class="edge">
-<title>_7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353</title>
+<title>_7e7fcdca06e527648f2f5f757451b77691e8c0694969f0d9bb23885f136d5618&#45;&gt;_35e7ef38147a012bdb8fd2eda36f6e6d21565d8c13fee1284043b753dabaf998</title>
 <path fill="none" stroke="black" d="M1803.29,-176.57C1819.24,-171.36 1836.43,-165.33 1852,-159 1872.95,-150.49 1895.54,-139.63 1914.39,-130.09"/>
 <polygon fill="none" stroke="black" points="1915.78,-133.3 1923.09,-125.63 1912.59,-127.07 1915.78,-133.3"/>
 <text xml:space="preserve" text-anchor="middle" x="1920.27" y="-145.7" font-family="Times,serif" font-size="14.00">owl:imports</text>
@@ -196,9 +196,9 @@
 <polygon fill="none" stroke="black" points="1573.88,-213 1278.12,-213 1278.12,-177 1573.88,-177 1573.88,-213"/>
 <text xml:space="preserve" text-anchor="middle" x="1426" y="-189.95" font-family="Times,serif" font-size="14.00">IRI &#45; https://ontology.unifiedcyberontology.org/owl</text>
 </g>
-<!-- _f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353 -->
+<!-- _f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_35e7ef38147a012bdb8fd2eda36f6e6d21565d8c13fee1284043b753dabaf998 -->
 <g id="edge19" class="edge">
-<title>_f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353</title>
+<title>_f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_35e7ef38147a012bdb8fd2eda36f6e6d21565d8c13fee1284043b753dabaf998</title>
 <path fill="none" stroke="gray" d="M1569.43,-176.57C1586.23,-172 1602.78,-166.25 1618,-159 1628.17,-154.15 1626.91,-146.98 1637.25,-142.5 1641.03,-140.86 1709.47,-133.28 1782.06,-125.58"/>
 <polygon fill="gray" stroke="gray" points="1782.18,-129.09 1791.76,-124.56 1781.45,-122.13 1782.18,-129.09"/>
 <text xml:space="preserve" text-anchor="middle" x="1678.12" y="-145.7" font-family="Times,serif" font-size="14.00">owl:versionIRI</text>
@@ -223,22 +223,22 @@
 <polygon fill="black" stroke="black" points="1544.52,-131.47 1553.2,-125.4 1542.63,-124.73 1544.52,-131.47"/>
 <text xml:space="preserve" text-anchor="middle" x="1561" y="-145.7" font-family="Times,serif" font-size="14.00">dcterms:conformsTo</text>
 </g>
-<!-- _b508e8baa7623798f008be32f495492f7eb379649447af7738f40d11b96a73ac -->
+<!-- _ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353 -->
 <g id="node31" class="node">
-<title>_b508e8baa7623798f008be32f495492f7eb379649447af7738f40d11b96a73ac</title>
+<title>_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353</title>
 <polygon fill="none" stroke="black" points="1247.62,-124.5 920.38,-124.5 920.38,-88.5 1247.62,-88.5 1247.62,-124.5"/>
-<text xml:space="preserve" text-anchor="middle" x="1084" y="-101.45" font-family="Times,serif" font-size="14.00">IRI &#45; https://ontology.unifiedcyberontology.org/owl/1.3.0</text>
+<text xml:space="preserve" text-anchor="middle" x="1084" y="-101.45" font-family="Times,serif" font-size="14.00">IRI &#45; https://ontology.unifiedcyberontology.org/owl/1.4.0</text>
 </g>
-<!-- _f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_b508e8baa7623798f008be32f495492f7eb379649447af7738f40d11b96a73ac -->
+<!-- _f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353 -->
 <g id="edge13" class="edge">
-<title>_f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_b508e8baa7623798f008be32f495492f7eb379649447af7738f40d11b96a73ac</title>
+<title>_f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M1295.12,-176.55C1269.86,-171.85 1243.8,-166.05 1219.75,-159 1201.79,-153.73 1198.42,-149.35 1181,-142.5 1169.27,-137.89 1156.66,-133.17 1144.54,-128.75"/>
 <polygon fill="gray" stroke="gray" points="1146.06,-125.58 1135.47,-125.47 1143.68,-132.16 1146.06,-125.58"/>
 <text xml:space="preserve" text-anchor="middle" x="1303.38" y="-145.7" font-family="Times,serif" font-size="14.00">owl:backwardCompatibleWith</text>
 </g>
-<!-- _f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_b508e8baa7623798f008be32f495492f7eb379649447af7738f40d11b96a73ac -->
+<!-- _f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353 -->
 <g id="edge17" class="edge">
-<title>_f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_b508e8baa7623798f008be32f495492f7eb379649447af7738f40d11b96a73ac</title>
+<title>_f2e5b02a171f32dd0a9863c360551d6757f93137b44a6a36e87bb072376e7351&#45;&gt;_ef411fe8fcaa0f26fd6d42d8672c49f4527427890f7880833a41e98582cea353</title>
 <path fill="none" stroke="gray" stroke-dasharray="5,2" d="M1277.79,-177.81C1275.17,-177.54 1272.57,-177.27 1270,-177 1249.51,-174.88 1099.56,-174.05 1085.5,-159 1079.86,-152.96 1078.09,-144.56 1078.14,-136.31"/>
 <polygon fill="gray" stroke="gray" points="1081.61,-136.77 1079.06,-126.49 1074.64,-136.11 1081.61,-136.77"/>
 <text xml:space="preserve" text-anchor="middle" x="1131.25" y="-145.7" font-family="Times,serif" font-size="14.00">owl:priorVersion</text>

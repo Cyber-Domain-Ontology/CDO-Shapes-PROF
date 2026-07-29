@@ -1,4 +1,4 @@
-# imports: https://ontology.unifiedcyberontology.org/owl/1.4.0
+# imports: https://ontology.unifiedcyberontology.org/owl/1.5.0
 
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -14,7 +14,7 @@
 <http://example.org/shapes/sh-prof>
 	a owl:Ontology ;
 	rdfs:comment "This shapes file should be filled in for classes and properties of interest when the upstream ontology does not provide SHACL shapes."@en ;
-	owl:imports <https://ontology.unifiedcyberontology.org/owl/1.4.0> ;
+	owl:imports <https://ontology.unifiedcyberontology.org/owl/1.5.0> ;
 	.
 
 sh-prof:Profile-shape
