@@ -17,13 +17,39 @@
 	owl:imports <https://ontology.unifiedcyberontology.org/owl/1.5.0> ;
 	.
 
+sh-prof:Profile-disjointWith-ResourceDescriptor-shape
+	a sh:NodeShape ;
+	sh:message "prof:Profile and prof:ResourceDescriptor are disjoint classes."@en ;
+	sh:not [
+		a sh:NodeShape ;
+		sh:class prof:ResourceDescriptor ;
+	] ;
+	sh:targetClass prof:Profile ;
+	.
+
 sh-prof:Profile-shape
 	a sh:NodeShape ;
 	sh:targetClass prof:Profile ;
 	.
 
+sh-prof:ResourceDescriptor-hasArtifact-shape
+	a sh:PropertyShape ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:path prof:hasArtifact ;
+	.
+
+sh-prof:ResourceDescriptor-hasRole-shape
+	a sh:PropertyShape ;
+	sh:maxCount "1"^^xsd:integer ;
+	sh:path prof:hasRole ;
+	.
+
 sh-prof:ResourceDescriptor-shape
 	a sh:NodeShape ;
+	sh:property
+		sh-prof:ResourceDescriptor-hasArtifact-shape ,
+		sh-prof:ResourceDescriptor-hasRole-shape
+		;
 	sh:targetClass prof:ResourceDescriptor ;
 	.
 
